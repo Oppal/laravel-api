@@ -13,7 +13,7 @@ class CreateUserinfoTable extends Migration
      */
     public function up()
     {
-        Schema::create('userinfo', function (Blueprint $table) {
+        Schema::create('registers', function (Blueprint $table) {
             $table->increments('id');
              $table->string('Firstname');
                $table->string('Lastname');
