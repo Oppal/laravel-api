@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Register;
 
 class registerController extends Controller
 {
@@ -32,7 +33,7 @@ class registerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
            $register= new Register();
         $register->Firstname=request('Firstname');
